@@ -63,6 +63,7 @@
     vendorSylvania: vendorLogo('Sylvania'),
     vendorClipsal: vendorLogo('Clipsal'),
     vendorNitecore: vendorLogo('Nitecore'),
+    vendorOther: vendorLogo('Other supply brand'),
     clientVale: { src: 'assets/clients/vale-indonesia.svg', alt: 'PT Vale Indonesia logo' },
     clientFreeport: { src: 'assets/clients/freeport-indonesia.svg', alt: 'PT Freeport Indonesia logo' },
     clientAmman: { src: 'assets/clients/amman-mineral.svg', alt: 'PT Amman Mineral logo' },

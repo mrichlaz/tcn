@@ -160,5 +160,6 @@ window.supplierBrands = [
   { name: 'Petzl', discipline: 'Work-at-height safety', logoKey: 'vendorPetzl' },
   { name: 'Sylvania', discipline: 'Lighting', logoKey: 'vendorSylvania' },
   { name: 'Clipsal', discipline: 'Electrical accessories', logoKey: 'vendorClipsal' },
-  { name: 'Nitecore', discipline: 'Portable lighting', logoKey: 'vendorNitecore' }
+  { name: 'Nitecore', discipline: 'Portable lighting', logoKey: 'vendorNitecore' },
+  { name: 'Others', discipline: 'Additional brands on request', logoKey: 'vendorOther', isExpansion: true }
 ]

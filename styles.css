@@ -270,6 +270,8 @@ h1 em, h2 em, h3 em { font-family: var(--serif); font-weight: 400; }
 .supplier-brand-card { position: relative; min-height: 158px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; padding: 14px 16px 15px; overflow: hidden; border: 1px solid var(--line); background: rgba(237,242,251,.46); }
 .supplier-brand-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 62%; height: 3px; background: var(--red); }
 .supplier-brand-card:nth-child(5n + 2), .supplier-brand-card:nth-child(5n + 4) { background: #c6d1df; }
+.supplier-brand-card.is-expansion { background: rgba(64, 89, 158, .12); }
+.supplier-brand-card.is-expansion::after { width: 100%; }
 .supplier-brand-identity { display: flex; align-items: center; width: 100%; height: 43px; padding: 8px 10px; background: rgba(13,25,52,.06); border: 1px solid rgba(13,25,52,.12); }
 .supplier-brand-identity.is-placeholder { border-style: dashed; }
 .supplier-brand-identity img { width: 100%; height: 100%; object-fit: contain; object-position: left center; }

@@ -10,7 +10,7 @@ if (supplierBrandGrid && window.supplierBrands) {
     const mark = logo.src
       ? `<img src="${logo.src}" data-asset="${brand.logoKey}" data-asset-alt="auto" alt="${logo.alt}" />`
       : `<span class="supplier-logo-missing" aria-hidden="true">Logo</span>`
-    return `<article class="supplier-brand-card"><div class="supplier-brand-identity ${placeholder ? 'is-placeholder' : ''}">${mark}</div><strong class="supplier-brand-wordmark">${brand.name}</strong><span>${brand.discipline}</span></article>`
+    return `<article class="supplier-brand-card ${brand.isExpansion ? 'is-expansion' : ''}"><div class="supplier-brand-identity ${placeholder ? 'is-placeholder' : ''}">${mark}</div><strong class="supplier-brand-wordmark">${brand.name}</strong><span>${brand.discipline}</span></article>`
   }).join('')
 }
 
