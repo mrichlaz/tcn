@@ -570,7 +570,7 @@ h1 em, h2 em, h3 em { font-family: var(--serif); font-weight: 400; }
 
 .hero-slider-controls {
   top: 32px;
-  right: clamp(118px, 11vw, 170px);
+  right: max(132px, calc((100% - 1320px) / 2 + 116px));
   left: auto;
 }
 
