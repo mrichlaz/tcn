@@ -74,8 +74,7 @@ if (heroSlideshow) {
   const heroPrevious = heroSlideshow.querySelector('[data-hero-previous]')
   const heroNext = heroSlideshow.querySelector('[data-hero-next]')
   const heroCount = heroSlideshow.querySelector('.hero-slide-count')
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
-  const autoplayInterval = Number(heroSlideshow.dataset.autoplayInterval) || 6000
+  const autoplayInterval = Number(heroSlideshow.dataset.autoplayInterval) || 5000
   let activeHeroSlide = 0
   let heroTimer
 
@@ -94,13 +93,12 @@ if (heroSlideshow) {
     if (heroCount) heroCount.textContent = `${String(activeHeroSlide + 1).padStart(2, '0')} / ${String(heroSlides.length).padStart(2, '0')}`
   }
 
-  const stopHeroAutoplay = () => window.clearTimeout(heroTimer)
+  const stopHeroAutoplay = () => window.clearInterval(heroTimer)
   const startHeroAutoplay = () => {
     stopHeroAutoplay()
-    if (!reducedMotion.matches && !document.hidden) {
-      heroTimer = window.setTimeout(() => {
+    if (!document.hidden) {
+      heroTimer = window.setInterval(() => {
         showHeroSlide(activeHeroSlide + 1)
-        startHeroAutoplay()
       }, autoplayInterval)
     }
   }
@@ -113,7 +111,6 @@ if (heroSlideshow) {
   heroNext?.addEventListener('click', () => selectHeroSlide(activeHeroSlide + 1))
   heroDots.forEach((dot) => dot.addEventListener('click', () => selectHeroSlide(Number(dot.dataset.heroIndex))))
   document.addEventListener('visibilitychange', () => document.hidden ? stopHeroAutoplay() : startHeroAutoplay())
-  reducedMotion.addEventListener('change', startHeroAutoplay)
   showHeroSlide(0)
   startHeroAutoplay()
 }
