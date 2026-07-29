@@ -46,5 +46,8 @@ if (categoryHero && categoryGroups && relatedGrid) {
   categoryGroups.innerHTML = `<div class="group-heading"><p class="eyebrow">Subcategories</p><p>From TCN’s current catalogue. Availability and specification confirmed on enquiry.</p></div>${selectedCategory.groups.map((group, index) => `
     <article class="category-group"><div class="group-number">0${index + 1}</div><h2>${group.title}</h2><ul>${group.items.map((item) => `<li>${item}</li>`).join('')}</ul><a class="text-link" href="index.html#contact">Request this category <span>↗</span></a></article>
   `).join('')}`
-  relatedGrid.innerHTML = window.productCategories.filter((category) => category.id !== selectedCategory.id).slice(0, 3).map((category) => `<a href="product-category.html?category=${category.id}"><span>${category.number}</span><strong>${category.title}</strong><i>↗</i></a>`).join('')
+  relatedGrid.innerHTML = window.productCategories.filter((category) => category.id !== selectedCategory.id).slice(0, 3).map((category) => {
+    const relatedAsset = getAsset(category.imageKey)
+    return `<a href="product-category.html?category=${category.id}" aria-label="View ${category.title} product category"><figure class="related-card-media"><img src="${relatedAsset.src}" data-asset="${category.imageKey}" alt="${relatedAsset.alt}" loading="lazy" /></figure><span>${category.number}</span><strong>${category.title}</strong><i aria-hidden="true">↗</i></a>`
+  }).join('')
 }

@@ -331,11 +331,18 @@ h1 em, h2 em, h3 em { font-family: var(--serif); font-weight: 400; }
 .category-group .text-link { align-self: end; white-space: nowrap; }
 .related-categories { padding-bottom: clamp(54px, 6vw, 82px); }
 .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.related-grid a { min-height: 150px; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; align-items: start; padding: 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .2s, color .2s; }
-.related-grid a:hover { background: var(--blue); color: var(--paper); }
+.related-grid a { position: relative; isolation: isolate; min-height: 200px; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; align-items: start; padding: 18px; overflow: hidden; color: var(--ink); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(64, 89, 158, .08); transition: color .22s; }
+.related-card-media { position: absolute; z-index: 0; inset: 0; margin: 0; background: var(--blue-deep); }
+.related-card-media::after { content: ''; position: absolute; inset: 0; background: var(--card-scrim); transition: background .22s; }
+.related-card-media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.58) contrast(1.06); }
+.related-grid a > *:not(.related-card-media) { position: relative; z-index: 1; }
+.related-grid a:hover { color: var(--paper); }
+.related-grid a:hover .related-card-media::after { background: var(--card-scrim-hover); }
 .related-grid span { color: var(--red); font-family: var(--mono); font-size: 10px; }
-.related-grid strong { align-self: end; font-size: 20px; letter-spacing: -.035em; }
-.related-grid i { color: var(--red); font-size: 20px; font-style: normal; }
+.related-grid strong { grid-column: 1; grid-row: 2; align-self: start; margin-top: 10px; font-size: 20px; letter-spacing: -.035em; }
+.related-grid i { position: absolute; z-index: 1; bottom: 17px; left: 18px; color: var(--red); font-size: 17px; font-style: normal; }
+.related-grid i::before { content: 'View category'; margin-right: 8px; font-size: 12px; font-style: normal; font-weight: 600; }
+.related-grid a:hover i { color: var(--red-soft); }
 
 .projects-hero { min-height: 430px; background: linear-gradient(135deg, transparent 0 63%, var(--blue-soft) 63% 100%); }
 .project-ethos { padding: 37px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--blue); color: var(--paper); }
