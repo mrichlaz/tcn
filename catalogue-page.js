@@ -37,7 +37,7 @@ if (categoryHero && categoryGroups && relatedGrid) {
   document.title = `${selectedCategory.title} — Products | TCN`
   categoryHero.innerHTML = `
     <div class="category-hero-media" aria-hidden="true"><img src="${asset.src}" data-asset="${selectedCategory.imageKey}" alt="" /></div>
-    <a class="back-link" href="products.html">← All product families</a>
+    <a class="back-link" href="products.html#catalogue">← All product families</a>
     <p class="eyebrow">${selectedCategory.number} / Product category</p>
     <h1>${selectedCategory.title}</h1>
     <p>${selectedCategory.strapline}</p>
