@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "purpose": "TCN product-category image library. All catalogue visuals must be referenced from this directory, not scattered external URLs.",
+  "conventions": {
+    "name": "category-slug.extension",
+    "fallback": "tcn-industrial-placeholder.png",
+    "usage": "Set image, imageAlt and imageSource together in catalogue-data.js. Replace fallback items with approved manufacturer, supplier or TCN photography before publication."
+  },
+  "assets": [
+    { "file": "mechanical.jpg", "categories": ["mechanical"], "source": "Unsplash / photo-1504917595217-d4dc5ebe6122", "status": "reference image" },
+    { "file": "electrical.jpg", "categories": ["electrical", "aluminium-structures"], "source": "Unsplash / photo-1541888946425-d81bb19240f5", "status": "reference image" },
+    { "file": "survey-safety.jpg", "categories": ["survey-safety"], "source": "Unsplash / photo-1504307651254-35680f356dfd", "status": "reference image" },
+    { "file": "coatings.jpg", "categories": ["coatings", "forklift"], "source": "Unsplash / photo-1565793298595-6a879b1d9492", "status": "reference image" },
+    { "file": "prefab-capsules.jpg", "categories": ["prefab-capsules"], "source": "Unsplash / photo-1531058020387-3be344556be6", "status": "reference image" },
+    { "file": "tcn-industrial-placeholder.png", "categories": ["instrument-control", "lighting", "flashlights"], "source": "Original generated TCN placeholder", "status": "temporary fallback" }
+  ]
+}

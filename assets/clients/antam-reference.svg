@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="title">
+  <title id="title">Antam client reference mark</title>
+  <rect width="600" height="180" fill="#edf1f6"/>
+  <path d="M62 58h14l13 25-13 25H62L49 83l13-25Zm36 0h14l13 25-13 25H98L85 83l13-25Zm36 0h14l13 25-13 25h-14l-13-25 13-25Z" fill="#0d8375"/>
+  <path d="M62 114h14l13-13-13-13H62l-13 13 13 13Zm36 0h14l13-13-13-13H98l-13 13 13 13Zm36 0h14l13-13-13-13h-14l-13 13 13 13Z" fill="#d8a42a"/>
+  <text x="190" y="111" fill="#0d8375" font-family="Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="-3">ANTAM</text>
+</svg>

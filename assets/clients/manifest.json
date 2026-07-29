@@ -1,0 +1,11 @@
+{
+  "purpose": "Selected client-logo assets for the TCN reference section.",
+  "assets": [
+    { "file": "vale-indonesia.svg", "company": "PT Vale Indonesia, Tbk.", "source": "https://companieslogo.com/vale-indonesia/logo/", "status": "reference presentation; retain only with client approval" },
+    { "file": "freeport-indonesia.svg", "company": "PT Freeport Indonesia", "source": "https://companieslogo.com/freeport-mcmoran/logo/", "status": "reference presentation; retain only with client approval" },
+    { "file": "amman-mineral.svg", "company": "PT Amman Mineral", "source": "https://companieslogo.com/pt-amman-mineral-internasional-tbk/logo/", "status": "reference presentation; retain only with client approval" },
+    { "file": "donggi-senoro-reference.svg", "company": "PT Donggi Senoro", "source": "TCN typographic reference mark", "status": "replace with an approved client logo before publication" },
+    { "file": "antam-reference.svg", "company": "PT Antam, Tbk", "source": "TCN typographic reference mark", "status": "replace with an approved client logo before publication" },
+    { "file": "hexindo-reference.svg", "company": "PT Hexindo Adiperkasa, Tbk", "source": "TCN typographic reference mark", "status": "replace with an approved client logo before publication" }
+  ]
+}

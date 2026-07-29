@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="title">
+  <title id="title">Donggi Senoro client reference mark</title>
+  <rect width="600" height="180" fill="#e8edf4"/>
+  <path d="M60 105c0-36 25-61 25-61s25 25 25 61c0 16-11 29-25 29s-25-13-25-29Z" fill="#2583b8"/>
+  <path d="M98 105c0-28 20-48 20-48s20 20 20 48c0 13-9 24-20 24s-20-11-20-24Z" fill="#40599e"/>
+  <text x="165" y="94" fill="#18315c" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="-1">DONGGI SENORO</text>
+  <text x="168" y="124" fill="#526987" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">LNG / CLIENT REFERENCE</text>
+</svg>

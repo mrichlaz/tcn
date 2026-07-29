@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "purpose": "Approved supplier and vendor logo library for the TCN products page.",
+  "usage": "Each supplier record in catalogue-data.js carries a logoKey. The visible fallback is logo-placeholder.svg. Add an approved local SVG or PNG here, then replace that key's src in assets/asset-library.js. The products page automatically renders the approved logo in the same fixed slot.",
+  "status": "All suppliers currently use the clearly marked placeholder tile. Obtain the applicable brand-use approval before adding an official vendor logo.",
+  "assets": [
+    {
+      "path": "assets/vendors/logo-placeholder.svg",
+      "purpose": "Shared visible fallback for supplier cards until an approved vendor logo is supplied."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="title">
+  <title id="title">Hexindo Adiperkasa client reference mark</title>
+  <rect width="600" height="180" fill="#edf1f6"/>
+  <rect x="57" y="52" width="17" height="76" fill="#ef8c22"/>
+  <rect x="113" y="52" width="17" height="76" fill="#ef8c22"/>
+  <rect x="74" y="81" width="39" height="18" fill="#1d2637"/>
+  <text x="160" y="95" fill="#1d2637" font-family="Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="-2">HEXINDO</text>
+  <text x="163" y="124" fill="#566a83" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">ADIPERKASA / CLIENT REFERENCE</text>
+</svg>
