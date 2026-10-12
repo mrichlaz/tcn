@@ -118,7 +118,6 @@ h1 em, h2 em, h3 em { font-family: var(--serif); font-weight: 400; }
 .reference-grid span:nth-child(2n) { background: var(--blue-soft); }
 .client-logo-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 54px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .client-logo-card { min-height: 202px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 28px; background: rgba(237,242,251,.56); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.client-logo-card:nth-child(2) { background: #c6d1df; }
 .client-logo-card img { width: min(100%, 220px); height: 86px; object-fit: contain; object-position: left center; }
 .client-logo-card p { margin: 0; color: var(--muted); font: 11px var(--mono); line-height: 1.35; text-transform: uppercase; }
 .reference-roster { margin-top: 0; padding: 29px 0 0; border-top: 3px solid var(--red); }
