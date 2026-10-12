@@ -138,9 +138,9 @@
           <article class="client-logo-card"><img src="assets/clients/vale-indonesia.svg" data-asset="clientVale" data-asset-alt="auto" alt="PT Vale Indonesia logo" /><p>PT Vale Indonesia, Tbk.</p></article>
           <article class="client-logo-card"><img src="assets/clients/freeport-indonesia.svg" data-asset="clientFreeport" data-asset-alt="auto" alt="PT Freeport Indonesia logo" /><p>PT Freeport Indonesia</p></article>
           <article class="client-logo-card"><img src="assets/clients/amman-mineral.svg" data-asset="clientAmman" data-asset-alt="auto" alt="PT Amman Mineral logo" /><p>PT Amman Mineral</p></article>
-          <article class="client-logo-card"><img src="assets/clients/donggi-senoro-reference.svg" data-asset="clientDonggi" data-asset-alt="auto" alt="PT Donggi Senoro client reference mark" /><p>PT Donggi Senoro</p></article>
-          <article class="client-logo-card"><img src="assets/clients/antam-reference.svg" data-asset="clientAntam" data-asset-alt="auto" alt="PT Antam client reference mark" /><p>PT Antam, Tbk</p></article>
-          <article class="client-logo-card"><img src="assets/clients/hexindo-reference.svg" data-asset="clientHexindo" data-asset-alt="auto" alt="PT Hexindo Adiperkasa client reference mark" /><p>PT Hexindo Adiperkasa, Tbk</p></article>
+          <article class="client-logo-card"><img src="assets/clients/donggi-senoro.png" data-asset="clientDonggi" data-asset-alt="auto" alt="PT Donggi Senoro logo" /><p>PT Donggi Senoro</p></article>
+          <article class="client-logo-card"><img src="assets/clients/antam.png" data-asset="clientAntam" data-asset-alt="auto" alt="PT Antam, Tbk logo" /><p>PT Antam, Tbk</p></article>
+          <article class="client-logo-card"><img src="assets/clients/hexindo-adiperkasa.png" data-asset="clientHexindo" data-asset-alt="auto" alt="PT Hexindo Adiperkasa, Tbk logo" /><p>PT Hexindo Adiperkasa, Tbk</p></article>
         </div>
         <div class="reference-roster reveal"><ul><li>PT. Kalla Inti Karsa</li><li>PT. Panca Amara Utama</li><li>PT. Adani Global</li><li>PT. Fast Food Indonesia</li><li>PT. Karya Atap Membrane</li><li>Golden Corner Group</li><li>PT. Truba Jaga Cita</li><li>PT. Lycon Asia Mandiri</li><li class="reference-more"><em>…and other clients.</em></li></ul></div>
       </section>
@@ -173,8 +173,13 @@
             </div>
           </section>
         </div>
-        <form class="contact-form reveal reveal-delay" id="quote-form">
+        <form class="contact-form reveal reveal-delay" id="quote-form" action="https://formsubmit.co/info@tcn-corp.com" method="POST">
           <div class="form-intro"><p>Request a quote</p><span>Fields marked * are required</span></div>
+          <input type="hidden" name="_subject" value="New TCN enquiry from tcn-corp.com" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://tcn-corp.com/thank-you.html" />
+          <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <label>Full name *<input required name="name" type="text" autocomplete="name" /></label>
           <label>Company *<input required name="company" type="text" autocomplete="organization" /></label>
           <label>Email *<input required name="email" type="email" autocomplete="email" /></label>
@@ -197,6 +202,6 @@
     </footer>
 
     <script src="assets/asset-library.js"></script>
-    <script src="script.js?v=20260729-2"></script>
+    <script src="script.js?v=20261012-1"></script>
   </body>
 </html>

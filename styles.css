@@ -163,6 +163,11 @@ h1 em, h2 em, h3 em { font-family: var(--serif); font-weight: 400; }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-bottom: 2px solid var(--blue); }
 .contact-form .button { width: 100%; margin-top: 29px; }
 .form-status { min-height: 1.2em; margin: 14px 0 0; color: var(--blue-deep); font-size: 12px; }
+.form-status.is-success { color: #1f6b3f; }
+.form-status.is-error { color: var(--red); }
+.form-status a { border-bottom: 1px solid currentColor; }
+.form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.contact-form button[type="submit"]:disabled { opacity: .6; cursor: progress; }
 .form-contact { margin: 11px 0 0; color: var(--muted); font-size: clamp(8.5px, 2.7vw, 11px); white-space: nowrap; }
 .form-contact a { color: var(--ink); border-bottom: 1px solid var(--ink); }
 

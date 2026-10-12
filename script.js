@@ -41,11 +41,38 @@ const observer = new IntersectionObserver((entries) => {
 
 revealItems.forEach((item) => observer.observe(item))
 
-quoteForm?.addEventListener('submit', (event) => {
+quoteForm?.addEventListener('submit', async (event) => {
   event.preventDefault()
-  const name = new FormData(quoteForm).get('name')
-  formStatus.textContent = `Thank you, ${name}. Your enquiry is ready to be sent to TCN.`
-  quoteForm.reset()
+
+  const submitButton = quoteForm.querySelector('button[type="submit"]')
+  const data = Object.fromEntries(new FormData(quoteForm).entries())
+  const name = String(data.name || '').trim().split(' ')[0]
+
+  formStatus.classList.remove('is-error', 'is-success')
+  formStatus.textContent = 'Sending your enquiry…'
+  if (submitButton) submitButton.disabled = true
+
+  try {
+    const response = await fetch(`https://formsubmit.co/ajax/${quoteForm.action.split('/').pop()}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(data)
+    })
+    const result = await response.json()
+
+    if (response.ok && String(result.success) === 'true') {
+      formStatus.classList.add('is-success')
+      formStatus.textContent = `Thank you${name ? `, ${name}` : ''}. Your enquiry has been sent to TCN — we will respond shortly.`
+      quoteForm.reset()
+    } else {
+      throw new Error(result.message || 'Submission failed')
+    }
+  } catch (error) {
+    formStatus.classList.add('is-error')
+    formStatus.innerHTML = 'Sorry, your enquiry could not be sent. Please email <a href="mailto:info@tcn-corp.com">info@tcn-corp.com</a> or call <a href="tel:+62811454669">+62 811 454 669</a>.'
+  } finally {
+    if (submitButton) submitButton.disabled = false
+  }
 })
 
 const mapFrame = document.querySelector('#office-map-frame')

@@ -67,9 +67,9 @@
     clientVale: { src: 'assets/clients/vale-indonesia.svg', alt: 'PT Vale Indonesia logo' },
     clientFreeport: { src: 'assets/clients/freeport-indonesia.svg', alt: 'PT Freeport Indonesia logo' },
     clientAmman: { src: 'assets/clients/amman-mineral.svg', alt: 'PT Amman Mineral logo' },
-    clientDonggi: { src: 'assets/clients/donggi-senoro-reference.svg', alt: 'PT Donggi Senoro client reference mark' },
-    clientAntam: { src: 'assets/clients/antam-reference.svg', alt: 'PT Antam client reference mark' },
-    clientHexindo: { src: 'assets/clients/hexindo-reference.svg', alt: 'PT Hexindo Adiperkasa client reference mark' }
+    clientDonggi: { src: 'assets/clients/donggi-senoro.png', alt: 'PT Donggi Senoro logo' },
+    clientAntam: { src: 'assets/clients/antam.png', alt: 'PT Antam, Tbk logo' },
+    clientHexindo: { src: 'assets/clients/hexindo-adiperkasa.png', alt: 'PT Hexindo Adiperkasa, Tbk logo' }
   }
 
   const get = (key) => images[key] || null
