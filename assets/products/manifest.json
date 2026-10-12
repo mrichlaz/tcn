@@ -4,15 +4,21 @@
   "conventions": {
     "name": "category-slug.extension",
     "fallback": "tcn-industrial-placeholder.png",
-    "usage": "Set image, imageAlt and imageSource together in catalogue-data.js. Replace fallback items with approved manufacturer, supplier or TCN photography before publication."
+    "usage": "Set image, imageAlt and imageSource together in catalogue-data.js. Replace fallback items with approved manufacturer, supplier or TCN photography before publication. Scene images here are shared by the hero, capability, industry and value sections; each key must resolve to a different file so no section repeats another's visual."
   },
   "assets": [
-    { "file": "mechanical.jpg", "categories": ["mechanical"], "source": "Unsplash / photo-1504917595217-d4dc5ebe6122", "status": "reference image" },
-    { "file": "electrical.jpg", "categories": ["electrical", "aluminium-structures"], "source": "Unsplash / photo-1541888946425-d81bb19240f5", "status": "reference image" },
-    { "file": "survey-safety.jpg", "categories": ["survey-safety"], "source": "Unsplash / photo-1504307651254-35680f356dfd", "status": "reference image" },
-    { "file": "coatings.jpg", "categories": ["coatings", "forklift"], "source": "Unsplash / photo-1565793298595-6a879b1d9492", "status": "reference image" },
-    { "file": "prefab-capsules.jpg", "categories": ["prefab-capsules"], "source": "Unsplash / photo-1531058020387-3be344556be6", "status": "reference image" },
-    { "file": "construction-structure.jpg", "categories": ["home-hero", "construction"], "source": "Unsplash / photo-1726087165132-d64b2401728a", "status": "reference image" },
-    { "file": "tcn-industrial-placeholder.png", "categories": ["instrument-control", "lighting", "flashlights"], "source": "Original generated TCN placeholder", "status": "temporary fallback" }
+    { "file": "mechanical.jpg", "categories": ["mechanical"], "source": "Reference photo / photo-1504917595217-d4dc5ebe6122", "status": "reference image" },
+    { "file": "electrical.jpg", "categories": ["electrical", "aluminium-structures"], "source": "Reference photo / photo-1541888946425-d81bb19240f5", "status": "reference image" },
+    { "file": "survey-safety.jpg", "categories": ["survey-safety"], "source": "Reference photo / photo-1504307651254-35680f356dfd", "status": "reference image" },
+    { "file": "coatings.jpg", "categories": ["coatings", "forklift"], "source": "Reference photo / photo-1565793298595-6a879b1d9492", "status": "reference image" },
+    { "file": "prefab-capsules.jpg", "categories": ["prefab-capsules"], "source": "Reference photo / photo-1531058020387-3be344556be6", "status": "reference image" },
+    { "file": "construction-structure.jpg", "categories": ["home-hero", "construction"], "source": "Reference photo / photo-1726087165132-d64b2401728a", "status": "reference image" },
+    { "file": "structural-erection.jpg", "categories": ["capability-construction"], "source": "Reference photo / photo-1741009305401-c71594c08c2c", "status": "reference image" },
+    { "file": "trading-procurement.jpg", "categories": ["capability-trading"], "source": "Reference photo / photo-1553413077-190dd305871c", "status": "reference image" },
+    { "file": "industry-piping.jpg", "categories": ["industry-piping"], "source": "Reference photo / photo-1759148414485-5f624fe9d1ea", "status": "reference image" },
+    { "file": "teamwork.jpg", "categories": ["value-teamwork"], "source": "Reference photo / photo-1742112125554-fdb788faedaa", "status": "reference image" },
+    { "file": "quality-inspection.jpg", "categories": ["value-integrity"], "source": "Reference photo / photo-1748348389780-3eb3ce44ac65", "status": "reference image" },
+    { "file": "delivery-logistics.jpg", "categories": ["value-delivery"], "source": "Reference photo / photo-1774929108070-b60d3879e071", "status": "reference image" },
+    { "file": "tcn-industrial-placeholder.png", "categories": ["fallback"], "source": "Original generated TCN placeholder", "status": "temporary fallback" }
   ]
 }

@@ -25,7 +25,7 @@ if (productGrid) {
     const asset = getAsset(category.imageKey)
     return `
     <a class="product-index-card" href="product-category.html?category=${category.id}" aria-label="View ${category.title} product category">
-      <figure class="product-index-media"><img src="${asset.src}" data-asset="${category.imageKey}" alt="${asset.alt}" loading="lazy" /><figcaption>${category.imageSource}</figcaption></figure>
+      <figure class="product-index-media"><img src="${asset.src}" data-asset="${category.imageKey}" alt="${asset.alt}" loading="lazy" /></figure>
       <span class="product-number">${category.number}</span>
       <div><p class="card-label">${category.tags.slice(0, 2).join(' / ')}</p><h2>${category.title}</h2><p>${category.strapline}</p></div>
       <span class="product-card-link" aria-hidden="true">View category <span>↗</span></span>

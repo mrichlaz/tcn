@@ -1,0 +1,41 @@
+# robots.txt — PT Telaga Cahaya Nusantara (TCN)
+# https://tcn-corp.com
+
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+# --- AI search discovery crawlers (allow: these feed answer engines) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# --- Model training crawlers ---
+# Allowed: TCN is a B2B supplier that benefits from maximum brand visibility.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://tcn-corp.com/sitemap.xml
