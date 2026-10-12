@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "purpose": "Dedicated imagery for the product-family cards on products.html and their category/related surfaces. Each file belongs to exactly one product family so no two catalogue cards share a visual. Kept separate from the shared scene images in assets/products/ that the hero, capability and project sections reuse.",
+  "conventions": {
+    "name": "family-slug.extension",
+    "size": "1600x1000 landscape (source is cropped with crop=entropy so the subject stays in frame)",
+    "usage": "Referenced by the productX keys in assets/asset-library.js. Do not point two families at the same file."
+  },
+  "assets": [
+    { "file": "mechanical.jpg", "family": "mechanical", "source": "Unsplash / photo-1693463735697-73df1f35930d", "status": "reference image" },
+    { "file": "electrical.jpg", "family": "electrical", "source": "Unsplash / photo-1566417110090-6b15a06ec800", "status": "reference image" },
+    { "file": "instrument-control.jpg", "family": "instrument-control", "source": "Unsplash / photo-1710751188315-4f220a614bcd", "status": "reference image" },
+    { "file": "survey-safety.jpg", "family": "survey-safety", "source": "Unsplash / photo-1766830110938-0ea8a6d78ecb", "status": "reference image" },
+    { "file": "lighting.jpg", "family": "lighting", "source": "Unsplash / photo-1775646239349-49a01e01e203", "status": "reference image" },
+    { "file": "flashlights.jpg", "family": "flashlights", "source": "Unsplash / photo-1561916828-f1fae4c82ba2", "status": "reference image" },
+    { "file": "aluminium-structures.jpg", "family": "aluminium-structures", "source": "Unsplash / photo-1765202709974-597a8fe154bc", "status": "reference image" },
+    { "file": "coatings.jpg", "family": "coatings", "source": "Unsplash / photo-1772305336606-989a457ffbae", "status": "reference image" },
+    { "file": "prefab-capsules.jpg", "family": "prefab-capsules", "source": "Unsplash / photo-1764757172402-e1ea14f31d80", "status": "reference image" },
+    { "file": "forklift.jpg", "family": "forklift", "source": "Unsplash / photo-1759826350352-c5b0b77729bd", "status": "reference image" }
+  ]
+}

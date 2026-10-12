@@ -1,12 +1,28 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "purpose": "Approved supplier and vendor logo library for the TCN products page.",
-  "usage": "Each supplier record in catalogue-data.js carries a logoKey. The visible fallback is logo-placeholder.svg. Add an approved local SVG or PNG here, then replace that key's src in assets/asset-library.js. The products page automatically renders the approved logo in the same fixed slot.",
-  "status": "All suppliers currently use the clearly marked placeholder tile. Obtain the applicable brand-use approval before adding an official vendor logo.",
+  "usage": "Each supplier record in catalogue-data.js carries a logoKey. assets/asset-library.js maps that key to a local file here. The products page renders the logo in the same fixed slot. logo-placeholder.svg remains the fallback for any brand without a supplied asset.",
+  "status": "Local brand marks installed for the 19 named suppliers. Confirm brand-use/usage rights with each manufacturer before public launch; 'Others' intentionally keeps the placeholder tile.",
   "assets": [
-    {
-      "path": "assets/vendors/logo-placeholder.svg",
-      "purpose": "Shared visible fallback for supplier cards until an approved vendor logo is supplied."
-    }
+    { "key": "vendorKsb", "path": "assets/vendors/ksb.svg", "brand": "KSB" },
+    { "key": "vendorRotork", "path": "assets/vendors/rotork.svg", "brand": "Rotork" },
+    { "key": "vendorSiemens", "path": "assets/vendors/siemens.svg", "brand": "Siemens" },
+    { "key": "vendorAbb", "path": "assets/vendors/abb.svg", "brand": "ABB" },
+    { "key": "vendorSchneider", "path": "assets/vendors/schneider-electric.svg", "brand": "Schneider Electric" },
+    { "key": "vendor3m", "path": "assets/vendors/3m.svg", "brand": "3M" },
+    { "key": "vendorAesseal", "path": "assets/vendors/aesseal.svg", "brand": "AESSEAL" },
+    { "key": "vendorSpiraxSarco", "path": "assets/vendors/spirax-sarco.png", "brand": "Spirax Sarco" },
+    { "key": "vendorPanduit", "path": "assets/vendors/panduit.svg", "brand": "Panduit" },
+    { "key": "vendorCorning", "path": "assets/vendors/corning.svg", "brand": "Corning" },
+    { "key": "vendorAsco", "path": "assets/vendors/asco.png", "brand": "ASCO" },
+    { "key": "vendorSmc", "path": "assets/vendors/smc.svg", "brand": "SMC" },
+    { "key": "vendorAshcroft", "path": "assets/vendors/ashcroft.png", "brand": "Ashcroft" },
+    { "key": "vendorNotifier", "path": "assets/vendors/notifier.png", "brand": "Notifier" },
+    { "key": "vendorGarmin", "path": "assets/vendors/garmin.svg", "brand": "Garmin" },
+    { "key": "vendorPetzl", "path": "assets/vendors/petzl.svg", "brand": "Petzl" },
+    { "key": "vendorSylvania", "path": "assets/vendors/sylvania.png", "brand": "Sylvania" },
+    { "key": "vendorClipsal", "path": "assets/vendors/clipsal.svg", "brand": "Clipsal" },
+    { "key": "vendorNitecore", "path": "assets/vendors/nitecore.svg", "brand": "Nitecore" },
+    { "key": "vendorOther", "path": null, "brand": "Other supply brands on request", "note": "Text-only card: no logo asset; the products page renders it without a logo tile." }
   ]
 }

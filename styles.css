@@ -282,6 +282,8 @@ h1 em, h2 em, h3 em { font-family: var(--serif); font-weight: 400; }
 .supplier-logo-missing { color: var(--muted); font: 9px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
 .supplier-brand-wordmark { display: block; max-width: 100%; margin-top: auto; font-size: clamp(18px, 1.75vw, 26px); line-height: .9; letter-spacing: -.065em; overflow-wrap: anywhere; }
 .supplier-brand-card span { color: var(--muted); font: 9px var(--mono); letter-spacing: .04em; line-height: 1.25; text-transform: uppercase; }
+.supplier-brand-card.is-expansion { justify-content: center; }
+.supplier-brand-card.is-expansion .supplier-brand-wordmark { margin-top: 0; }
 .product-index { padding: clamp(56px, 6.5vw, 88px) 0; }
 .index-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 25px; margin-bottom: 22px; }
 .index-heading > p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: 12px; }

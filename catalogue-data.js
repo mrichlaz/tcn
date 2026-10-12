@@ -35,7 +35,7 @@ const productCategories = [
     title: 'Instrument & control',
     strapline: 'Gauges, transmitters, analysers and control components from Ashcroft, ASCO, SMC and Clark Reliance.',
     imageKey: 'productInstrumentControl',
-    imageSource: 'TCN placeholder',
+    imageSource: 'Unsplash',
     tags: ['Process measurement', 'Pressure', 'Pneumatics', 'Detection'],
     groups: [
       { title: 'Level, analysis & measurement', items: ['Clark Reliance level gauges and transmitters', 'PH and DO analysers', 'Weighing scale systems', 'Ashcroft pressure and temperature gauges'] },
@@ -63,7 +63,7 @@ const productCategories = [
     title: 'TCN lighting',
     strapline: 'Solar street and flood lighting, explosion-proof fittings, and roadway and tunnel lighting.',
     imageKey: 'productLighting',
-    imageSource: 'TCN placeholder',
+    imageSource: 'Unsplash',
     tags: ['Solar street', 'Flood light', 'Ex-proof', 'Industrial'],
     groups: [
       { title: 'Solar lighting', items: ['GT-BJ-60W solar street light', 'Solar flood light, 200W series', 'Remote, time and light-control systems'] },
@@ -77,7 +77,7 @@ const productCategories = [
     title: 'Flashlights',
     strapline: 'Portable Nitecore lighting for inspection, emergency response and mobile maintenance.',
     imageKey: 'productFlashlights',
-    imageSource: 'TCN placeholder',
+    imageSource: 'Unsplash',
     tags: ['Portable lighting', 'Inspection', 'Emergency'],
     groups: [
       { title: 'Nitecore range', items: ['Nitecore TUP', 'Nitecore Concept 2', 'Nitecore TM10K', 'Nitecore P12 / GTS'] },

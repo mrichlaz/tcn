@@ -12,6 +12,7 @@
     { "file": "survey-safety.jpg", "categories": ["survey-safety"], "source": "Unsplash / photo-1504307651254-35680f356dfd", "status": "reference image" },
     { "file": "coatings.jpg", "categories": ["coatings", "forklift"], "source": "Unsplash / photo-1565793298595-6a879b1d9492", "status": "reference image" },
     { "file": "prefab-capsules.jpg", "categories": ["prefab-capsules"], "source": "Unsplash / photo-1531058020387-3be344556be6", "status": "reference image" },
+    { "file": "construction-structure.jpg", "categories": ["home-hero", "construction"], "source": "Unsplash / photo-1726087165132-d64b2401728a", "status": "reference image" },
     { "file": "tcn-industrial-placeholder.png", "categories": ["instrument-control", "lighting", "flashlights"], "source": "Original generated TCN placeholder", "status": "temporary fallback" }
   ]
 }

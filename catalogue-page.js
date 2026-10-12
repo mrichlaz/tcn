@@ -5,12 +5,18 @@ const getAsset = (key) => window.TCNAssets?.get(key) || { src: '', alt: '' }
 
 if (supplierBrandGrid && window.supplierBrands) {
   supplierBrandGrid.innerHTML = window.supplierBrands.map((brand) => {
-    const logo = getAsset(brand.logoKey)
-    const placeholder = logo.status?.startsWith('placeholder')
-    const mark = logo.src
-      ? `<img src="${logo.src}" data-asset="${brand.logoKey}" data-asset-alt="auto" alt="${logo.alt}" />`
-      : `<span class="supplier-logo-missing" aria-hidden="true">Logo</span>`
-    return `<article class="supplier-brand-card ${brand.isExpansion ? 'is-expansion' : ''}"><div class="supplier-brand-identity ${placeholder ? 'is-placeholder' : ''}">${mark}</div><strong class="supplier-brand-wordmark">${brand.name}</strong><span>${brand.discipline}</span></article>`
+    // The `Others` card has no brand logo, so no logo tile is rendered - it simply
+    // reads "Others" with its description.
+    const tile = brand.isExpansion
+      ? ''
+      : (() => {
+          const logo = getAsset(brand.logoKey)
+          const mark = logo.src
+            ? `<img src="${logo.src}" data-asset="${brand.logoKey}" data-asset-alt="auto" alt="${logo.alt}" />`
+            : `<span class="supplier-logo-missing" aria-hidden="true">Logo</span>`
+          return `<div class="supplier-brand-identity ${logo.status?.startsWith('placeholder') ? 'is-placeholder' : ''}">${mark}</div>`
+        })()
+    return `<article class="supplier-brand-card ${brand.isExpansion ? 'is-expansion' : ''}">${tile}<strong class="supplier-brand-wordmark">${brand.name}</strong><span>${brand.discipline}</span></article>`
   }).join('')
 }
 
